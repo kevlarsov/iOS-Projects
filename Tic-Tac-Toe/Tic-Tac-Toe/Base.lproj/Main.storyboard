@@ -16,15 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tic-Tac-Toe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dw-52-Swi" userLabel="winLbl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic-Tac-Toe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dw-52-Swi" userLabel="winLbl">
                                 <rect key="frame" x="143.5" y="44" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-FV-ZcV" userLabel="resetBtn">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-FV-ZcV" userLabel="resetBtn">
                                 <rect key="frame" x="136.5" y="90" width="141" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -39,84 +41,84 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHx-Dk-mAd" userLabel="1">
-                                <rect key="frame" x="6" y="261" width="124" height="114"/>
+                                <rect key="frame" x="18" y="268" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XhQ-Yd-0bw"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="on9-eK-4qi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="655-ar-c27" userLabel="2">
-                                <rect key="frame" x="145" y="261" width="124" height="114"/>
+                                <rect key="frame" x="158" y="268" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJD-Wz-W57"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXT-X6-w6R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGS-3J-sAM" userLabel="3">
-                                <rect key="frame" x="287" y="261" width="124" height="114"/>
+                                <rect key="frame" x="299" y="268" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLr-Uk-SEr"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchDragInside" id="3Y8-lk-U5p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3i-Gy-Icw" userLabel="4">
-                                <rect key="frame" x="6" y="398" width="124" height="114"/>
+                                <rect key="frame" x="18" y="405" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKH-6v-k74"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rb-Hq-vP9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-Km-0A1" userLabel="5">
-                                <rect key="frame" x="145" y="398" width="124" height="114"/>
+                                <rect key="frame" x="158" y="405" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPy-rv-cAB"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGt-5i-qbG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-aA-2uh" userLabel="6">
-                                <rect key="frame" x="287" y="398" width="124" height="114"/>
+                                <rect key="frame" x="299" y="405" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TY1-eM-1Xe"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3w-jS-hVX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yx-K6-A2W" userLabel="7">
-                                <rect key="frame" x="6" y="534" width="124" height="114"/>
+                                <rect key="frame" x="18" y="541" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4n3-wE-Qpb"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAu-ow-1XD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-rk-o0j" userLabel="8">
-                                <rect key="frame" x="146" y="534" width="124" height="114"/>
+                                <rect key="frame" x="158" y="541" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flu-Eu-0VZ"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9N-Mq-BWs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PC-Lt-Oov" userLabel="9">
-                                <rect key="frame" x="287" y="534" width="124" height="114"/>
+                                <rect key="frame" x="299" y="541" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="x"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="xBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z1N-4s-cNL"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqn-cP-nHV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,17 +128,14 @@
                             <constraint firstItem="gmo-ER-pq6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CIH-fD-LJY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmo-ER-pq6" secondAttribute="trailing" id="Lru-MK-pB7"/>
                             <constraint firstItem="gmo-ER-pq6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PfG-5S-Pbt"/>
-                            <constraint firstItem="Lfe-FV-ZcV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USf-3Z-sJY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gmo-ER-pq6" secondAttribute="bottom" id="VAY-qT-pbn"/>
                             <constraint firstItem="gmo-ER-pq6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cwx-kl-R5P"/>
-                            <constraint firstItem="2Dw-52-Swi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="seW-1n-hNW"/>
-                            <constraint firstItem="Lfe-FV-ZcV" firstAttribute="top" secondItem="2Dw-52-Swi" secondAttribute="bottom" constant="20" id="xG3-N3-anJ"/>
                             <constraint firstItem="gmo-ER-pq6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yhM-DG-kmQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="resetButton" destination="Lfe-FV-ZcV" id="5QV-KJ-RZl"/>
-                        <outlet property="winLabel" destination="2Dw-52-Swi" id="mZq-qa-h6V"/>
+                        <outlet property="winLabel" destination="2Dw-52-Swi" id="Z39-lg-Udd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -146,7 +145,6 @@
     </scenes>
     <resources>
         <image name="grid" width="1078" height="1068"/>
-        <image name="x" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
