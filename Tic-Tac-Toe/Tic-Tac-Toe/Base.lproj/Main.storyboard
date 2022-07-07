@@ -134,7 +134,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resetButton" destination="Lfe-FV-ZcV" id="5QV-KJ-RZl"/>
+                        <outlet property="resetButton" destination="Lfe-FV-ZcV" id="acv-H4-UCF"/>
                         <outlet property="winLabel" destination="2Dw-52-Swi" id="Z39-lg-Udd"/>
                     </connections>
                 </viewController>
